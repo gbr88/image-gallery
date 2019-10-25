@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background: #efefef;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    width: 70vw;
+    height: 65vh;
+    margin: auto;
+    background: #ccc;
+    display: flex;
+}
+
+.image {
+    position: relative;
+    flex: 1 1 100%;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image div {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+}
+
+.image:hover div {
+    transition: 0.3s all ease;
+    transform: translateY(0%);
+}
+
+.left,
+.right {
+    flex: 0 0 50px;
+    background: white;
+}
+
+.action div {
+    width: 15px;
+    height: 22px;
+}
+
+.action div .right {
+    transform: rotate(180deg);
+}
+
+.thumbnails {
+    background: #666;
+    height: 90px;
+    padding: 1rem;
+}
+
+.thumbnails div {
+    width: 160px;
+    height: 100%;
+    background: #fff;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0.5rem;
+}
