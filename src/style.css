@@ -16,7 +16,7 @@ body {
 }
 
 .gallery {
-    width: 70vw;
+    width: 71vw;
     height: 65vh;
     margin: auto;
     background: #ccc;
@@ -50,17 +50,26 @@ body {
 
 .left,
 .right {
-    flex: 0 0 50px;
+    display: flex;
     background: white;
+    align-items: center;
 }
 
-.action div {
-    width: 15px;
-    height: 22px;
+.right img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.right-arrow {
-    transform: rotate(180deg);
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-size: auto 100%;
 }
 
 .thumbnails {

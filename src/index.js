@@ -50,13 +50,12 @@ let displayImage = function(index) {
 };
 
 let generateArrows = function() {
-    let arrow1 = document.createElement('div');
-    arrow1.style.backgroundImage = 'url(src/arrow.svg)';
-    let arrow2 = document.createElement('div');
-    arrow2.setAttribute('class', 'right-arrow');
-    arrow2.style.backgroundImage = 'url(src/arrow.svg)';
-    navigationLeft.appendChild(arrow1);
-    navigationRight.appendChild(arrow2);
+    let arrows = document.getElementsByClassName('arrow');
+    for (let i = 0; i < arrows.length; i++) {
+        arrows[i].setAttribute('src', 'src/arrow.svg');
+    }
+
+
 };
 
 let generateThumbnails = function() {
