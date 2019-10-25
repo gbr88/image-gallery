@@ -53,6 +53,7 @@ let generateArrows = function() {
     let arrow1 = document.createElement('div');
     arrow1.style.backgroundImage = 'url(src/arrow.svg)';
     let arrow2 = document.createElement('div');
+    arrow2.setAttribute('class', 'right-arrow');
     arrow2.style.backgroundImage = 'url(src/arrow.svg)';
     navigationLeft.appendChild(arrow1);
     navigationRight.appendChild(arrow2);

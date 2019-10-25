@@ -59,7 +59,7 @@ body {
     height: 22px;
 }
 
-.action div .right {
+.right-arrow {
     transform: rotate(180deg);
 }
 
